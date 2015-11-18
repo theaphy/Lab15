@@ -1,3 +1,5 @@
+// Tim Heaphy
+
 var app = angular.module('myModule', []);
 
 app.controller('myController', function($scope){
