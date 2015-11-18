@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>aVeryAngularShopper</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1 id="head"><span>Shopping List App</span></h1>
+<div ng-app="myModule" ng-controller="myController">
+	<form>
+		<label>Item: </label><input type="text" ng-model="newItem">
+		<label>Price: </label><input type="number" ng-model="newPrice">
+		<input id="button" type="button" value="Add" ng-click="addItem(newItem, newPrice)">
+		<label>Search: </label><input id="searcher" type="text" ng-model="membersNameOrPrice">
+	</form>
+
+	
+	<h4 id="listish">List</h4>
+	<div id="listly" ng-repeat="thing in groceries | filter: membersNameOrPrice | orderBy:'name'">{{thing.name}} <span id="prices">{{thing.price | currency}}</span></div>
+	<p id="total"><span id="leftTotal">Total</span><span id="rightTotal">{{ total | currency}}</span></p>
+</div>
+
+<script type="text/javascript" src="angular.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+
+

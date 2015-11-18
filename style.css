@@ -1,0 +1,92 @@
+body {
+
+}
+
+#head {
+	width: 40%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: 10px auto;
+	text-align: center;
+	color: white;
+	background-image: url(groceries.jpg);
+	border: 2px solid rgba(153, 255, 0, 1.0);
+}
+
+#head span {
+	background-color: rgba(16, 200, 205, 0.5);
+	padding: 5px;
+
+}
+
+form {
+	border: 2px solid black;
+	width: 40%;
+	margin: 0 auto;
+	background-color: rgba(153, 255, 0, 0.5);
+}
+
+#button {
+	border: none;
+	background-color: white;
+	margin: 10px auto;
+	font-weight: bold;
+}
+
+label {
+	display: block;
+	margin-top: 10px;
+	text-align: center;
+}
+
+input {
+	display: block;
+	margin: 0px auto;
+}
+
+#searcher {
+	margin-bottom: 10px;
+}
+
+#listish {
+	width: 40%;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid black;
+	background-color: rgba(153, 255, 0, 0.5);
+	color: black;
+}
+
+#listly {
+	width: 40%;
+	margin: 00px auto;
+	text-align: left;
+}
+
+#listly:hover {
+	background-color: rgba(16, 200, 205, 0.6);
+}
+
+#listly::first-letter {
+	text-transform: uppercase;
+}
+
+#prices {
+	float: right;
+}
+
+#total {
+	width: 40%;
+	margin: 20px auto;
+	background-color: rgba(255, 0, 0, 0.3);
+	border: 2px solid black;
+}
+
+#leftTotal {
+	margin-left: 5px;
+}
+
+#rightTotal {
+	float: right;
+	margin-right: 5px;
+}
